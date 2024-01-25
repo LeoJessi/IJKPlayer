@@ -1,0 +1,10 @@
+include ':app'
+include ':IJKPlayer'
+include ':IJKPlayer-java'
+include ':IJKPlayer-ex_so'
+include ':IJKPlayer-armv64'
+include ':IJKPlayer-armv7a'
+include ':IJKPlayer-armv5'
+include ':IJKPlayer-x86'
+include ':IJKPlayer-x86_64'
+

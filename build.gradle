@@ -1,0 +1,29 @@
+buildscript {
+    // 将所有依赖写在一个文件里面并导入
+
+    repositories {
+        google()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.2'
+    }
+}
+
+allprojects {
+    repositories {
+        // 谷歌私有仓库 主要是AndroidX这些依赖
+        google()
+        mavenCentral()
+        // JitPack 远程仓库：https://jitpack.io  可在上面发布GitHub项目
+        maven { url 'https://jitpack.io' }
+        // 华为开源镜像：https://mirrors.huaweicloud.com
+        maven { url 'https://repo.huaweicloud.com/repository/maven' }
+        // 阿里云云效仓库：https://maven.aliyun.com/mvn/guide
+        maven { url "https://maven.aliyun.com/repository/public" }
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}
