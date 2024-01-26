@@ -28,7 +28,6 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.2.0'
     api project(":IJKPlayer-java")
     api project(":IJKPlayer-armv5")
     api project(":IJKPlayer-armv7a")
