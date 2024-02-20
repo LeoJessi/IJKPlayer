@@ -1,6 +1,5 @@
-plugins {
-    id 'com.android.library'
-}
+apply plugin: 'com.android.library'
+apply from: "$rootDir/gradle/publish.gradle"
 
 android {
     namespace = "top.jessi.ijkplayer"
