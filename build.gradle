@@ -1,12 +1,10 @@
 buildscript {
-    // 将所有依赖写在一个文件里面并导入
-
     repositories {
         google()
         gradlePluginPortal()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.2.2'
+        classpath 'com.android.tools.build:gradle:8.1.4'
     }
 }
 
