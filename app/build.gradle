@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "top.jessi.ijkplayer"
-        minSdk 21
+        minSdk 17
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -27,7 +27,7 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
 //    implementation project(':IJKPlayer-java')
 //    implementation project(':IJKPlayer-ex_so')
     implementation project(':IJKPlayer')
